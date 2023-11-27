@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="apple">Яблоко</button>
+    <button id="orange">Апельсин</button>
+    <button id="banana">Банан</button>
+    <script>
+        function openImage(fruit) {
+
+            var img = new Image();
+            if (fruit === "apple") {
+                img.src = "https://klike.net/uploads/posts/2022-09/1662040170_j-50.jpg";
+            } else if (fruit === "orange") {
+                img.src = "https://catherineasquithgallery.com/uploads/posts/2021-03/1614548386_61-p-apelsin-na-belom-fone-79.png";
+            } else if (fruit === "banana") {
+                img.src = "https://catherineasquithgallery.com/uploads/posts/2021-03/1614572712_1-p-banan-na-belom-fone-1.jpg";
+            }
+
+            window.open(img.src, "_blank");
+        }
+
+        document.getElementById("apple").addEventListener("click", function () {
+            openImage("apple");
+        });
+        document.getElementById("orange").addEventListener("click", function () {
+            openImage("orange");
+        });
+        document.getElementById("banana").addEventListener("click", function () {
+            openImage("banana");
+        });
+    </script>
+</body>
+
+</html>

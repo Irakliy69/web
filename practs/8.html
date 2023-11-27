@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="picture1" src="https://pvp_vkplay_ru.cdn.gmru.net/s3/upload/ruescommand/cfecf9219187b2a81a2293b01ada2b6b_1574528033.jpg">
+    <img id="picture2" src="https://i.pinimg.com/originals/d6/d6/0c/d6d60cd014d95b15a5a44cc0597f5947.jpg">
+    <script>
+
+        var picture1 = document.getElementById("picture1");
+        var picture2 = document.getElementById("picture2");
+
+        function changePicture() {
+
+            if (picture1.style.display === "none") {
+
+                picture1.style.display = "block";
+                picture2.style.display = "none";
+            } else {
+
+                picture1.style.display = "none";
+                picture2.style.display = "block";
+            }
+        }
+
+
+        picture1.addEventListener("mouseover", changePicture);
+
+        picture2.addEventListener("mouseover", changePicture);
+
+    </script>
+</body>
+
+</html>

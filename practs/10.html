@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="cat">Кот</button>
+    <button id="dog">Собака</button>
+    <button id="elephant">Слон</button>
+    <script>
+        function openImage(anumal) {
+
+            var img = new Image();
+            if (anumal === "cat") {
+                img.src = "https://w.forfun.com/fetch/02/0261dfae0e4904627653a2d6d5de1a4e.jpeg";
+            } else if (anumal === "dog") {
+                img.src = "https://attuale.ru/wp-content/uploads/2018/08/maxresdefault-60.jpg";
+            } else if (anumal === "elephant") {
+                img.src = "https://pic.rutubelist.ru/video/f6/c5/f6c517096b7f779f77349b33759c50cf.jpg";
+            }
+
+            window.open(img.src, "_blank");
+        }
+
+        document.getElementById("cat").addEventListener("click", function () {
+            openImage("cat");
+        });
+        document.getElementById("dog").addEventListener("click", function () {
+            openImage("dog");
+        });
+        document.getElementById("elephant").addEventListener("click", function () {
+            openImage("elephant");
+        });
+    </script>
+</body>
+
+</html>

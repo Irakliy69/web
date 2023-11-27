@@ -1,0 +1,16 @@
+<html>
+<script>
+    let date = new Date();
+    let options = {
+        weekday: 'long',
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+    };
+
+    let formattedDate = date.toLocaleDateString('ru-RU', options);
+
+    document.write(`В Самаре ${formattedDate}, ${date.toLocaleTimeString()}`);
+</script>
+
+</html>

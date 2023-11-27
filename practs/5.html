@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Сюрприз</title>
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Сюрприз</h1>
+
+    <script>
+        function changeColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        setTimeout(changeColor, 5000);
+
+        for (let i = 1; i <= 5; i++) {
+            alert("Счетчик: " + i);
+        }
+    </script>
+</body>
+
+</html>
