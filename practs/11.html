@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mass1 = ['Банан', 'Яблоко', 'Груша', 'Апельсин', 'Манго', 'Свекла', 'Капуста', 'Морковь', 'Огурец', 'Помидор'];
+        var mass2 = ['Тигр', 'Волк', 'Лев', 'Медведь', 'Рысь', 'Сорока', 'Воробей', 'Ворона', 'Филин', 'Синица'];
+
+        document.writeln("<br> Первый массив: " + mass1);
+        document.writeln("<br> Второй массив: " + mass2);
+
+        var frukt = mass1.filter(function (item) {
+            return !item.includes('овощ');
+        });
+        document.writeln("<br> Массив с фруктами: " + frukt);
+
+        var bird = mass2.filter(function (item) {
+            return item.includes('Птица');
+        });
+        document.writeln("<br> Массив с птицами: " + bird);
+
+        var mass3 = frukt.concat(bird);
+        document.writeln("<br> Объединенный массив: " + mass3);
+
+        document.writeln("<br> Длина массива: " + mass3.length);
+    </script>
+</body>
+
+</html>

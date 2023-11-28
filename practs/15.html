@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <script>
+        var clicks = 0;
+
+        function updateClicks() {
+            document.getElementById("btn").innerHTML = "Количество кликов: " + clicks;
+        }
+
+        function handleClick() {
+            clicks++;
+            updateClicks();
+        }
+    </script>
+</head>
+
+<body>
+    <button id="btn" onclick="handleClick()">Количество кликов: 0</button>
+</body>
+
+</html>
