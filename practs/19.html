@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let min = prompt("Введите число от 0 до 59:");
+
+        if (min >= 0 && min <= 14) {
+            document.write("Число ", min, " попадает в первую четверть.");
+        } else if (min >= 15 && min <= 29) {
+            document.write("Число ", min, " попадает во вторую четверть.");
+        } else if (min >= 30 && min <= 44) {
+            document.write("Число ", min, " попадает в третью четверть.");
+        } else if (min >= 45 && min <= 59) {
+            document.write("Число ", min, " попадает в четвертую четверть.");
+        } else {
+            document.write("Некорректное число.");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const rubles = parseFloat(prompt("Введите сумму в рублях:"));
+
+        const euroRate = 99;
+        const dollarsRate = 80;
+
+        const euros = (rubles / euroRate).toFixed(2);
+        const dollars = (rubles / dollarsRate).toFixed(2);
+
+        document.write(`Ваша сумма, в размере ${rubles} рублей, составляет ${euros} евро и ${dollars} долларов.`);
+    </script>
+</body>
+
+</html>
